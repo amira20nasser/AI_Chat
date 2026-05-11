@@ -1,0 +1,82 @@
+/* Custom styles to approximate the reference image */
+:root{
+  --accent:#f59f13; /* warm orange */
+  --sidebar-bg:#f2f4f7;
+  --muted:#e9eaeb;
+}
+
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+
+.app-header{
+  background:var(--accent);
+}
+
+.model-select{
+  min-width:220px;
+}
+
+.sidebar{
+  border-right:1px solid #e9ecef;
+  min-height:calc(100vh - 72px);
+}
+
+.chat-card{
+  min-height:calc(80vh - 40px);
+}
+
+.chat-pane{
+  background:#fff;
+  border:1px solid #ececec;
+  border-radius:6px;
+  padding:20px;
+  overflow:auto;
+}
+
+.msg{
+  max-width:60%;
+  padding:14px 18px;
+  border-radius:8px;
+  box-shadow:0 0 0 1px rgba(0,0,0,0.06) inset;
+}
+
+.msg-user{
+  background:#f3f3f3;
+  border:1px solid rgba(0,0,0,0.06);
+}
+
+.msg-bot{
+  background:#f0f6ff;
+  border:1px solid rgba(17, 102, 255, 0.08);
+}
+
+/* rounded list items */
+.list-group-item{
+  border:0;
+  background:transparent;
+}
+
+.list-group-item-action:hover{
+  background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,0.05);
+}
+
+.footer{
+  margin-top:auto;
+}
+
+/* make chat area stretch on tall screens */
+@media (max-width:767.98px){
+  .model-select{min-width:140px}
+  .sidebar{display:none}
+}
+
+/* small visual tweaks */
+.btn-dark{
+  background:#2b2a2a;
+  border:0;
+}
+
+.rounded-pill{border-radius:999px!important}
+
+/* ensure input row sits nicely */
+.border-top{border-top-color:#eee!important}
