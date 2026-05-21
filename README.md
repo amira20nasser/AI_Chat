@@ -1,4 +1,4 @@
-# AI Chat Demo
+# [AI Chat Demo](https://amira20nasser.github.io/AI_Chat/)
 
 A lightweight browser-based AI assistant demo that supports both chat and image generation/editing using the Fireworks.ai API.
 
